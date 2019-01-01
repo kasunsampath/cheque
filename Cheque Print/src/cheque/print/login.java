@@ -70,7 +70,7 @@ public class login extends javax.swing.JFrame {
         });
     }
 
-  /*  public void login() {
+  public void login() {
         try {
             user = jTextField1.getText();
             Connection com = DB.conect();
@@ -79,12 +79,12 @@ public class login extends javax.swing.JFrame {
             while (r.next()) {
                 b = true;
                 username = r.getString("username");
-                usertype = r.getString("usertype");
+               /// usertype = r.getString("usertype");
 
             }
             if (b) {
                 this.dispose();
-                new invoice().setVisible(true);
+               // new invoice().setVisible(true);
             } else {
                 JOptionPane.showMessageDialog(null, "wrong user");
             }
@@ -92,7 +92,7 @@ public class login extends javax.swing.JFrame {
             e.printStackTrace();
         }
 
-    }*/
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -179,7 +179,7 @@ public class login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        //login();
+        login();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
